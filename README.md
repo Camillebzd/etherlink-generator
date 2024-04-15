@@ -1,13 +1,19 @@
-# Sample Hardhat Project
+# Etherlink Generator
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project is an ERC-721 NFT contract. Each NFT is an Etherlink logo with on-chain metadata. It allows users to create unique NFTs with different colours.
 
-Try running some of the following tasks:
+## Setup
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+First, install the dependencies:
+```
+npm install
+```
+
+Then, rename the file `.env.example` and complete the empty fields.
+
+## Deploy
+
+Just run:
+```
+npx hardhat run scripts/deploy.ts --network <your-network>
 ```
